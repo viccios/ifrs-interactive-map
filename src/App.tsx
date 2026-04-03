@@ -1,6 +1,6 @@
 import { MapContainer, TileLayer } from 'react-leaflet'
 import { MarkerBanheiro } from './components/MarkerBanheiro'
-import { banheiros } from '../assets/coordenadas'
+import { banheiros } from '../assets/banheirosDados'
 
 function App() {
   return (
@@ -25,8 +25,14 @@ function App() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {banheiros.map((banheiro, index) => (
-          <MarkerBanheiro position={banheiro} key={index} />
+        {banheiros.map((banheiro) => (
+          <MarkerBanheiro
+            position={banheiro.position}
+            key={banheiro.id}
+            name={banheiro.name}
+            description={banheiro.description}
+            imageUrl={banheiro.imageUrl}
+          />
         ))}
       </MapContainer>
     </>
