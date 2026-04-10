@@ -3,29 +3,25 @@ import { useState } from 'react'
 import { Marker } from 'react-leaflet'
 import banheiroPng from './banheiro.png'
 import { Modal } from './Model'
-import type { Banheiro } from '../../assets/banheirosDados'
+import type { Local } from '../../assets/locaisDados'
 
-const iconeBanheiro = L.icon({
-  iconUrl: banheiroPng,
-  iconSize: [25, 25],
-})
+const icones:Record<string,L.Icon> = {
+  banheiro: L.icon({
+    iconUrl: banheiroPng,
+    iconSize: [25, 25],
+  }),
+}
 
-export function MarkerBanheiro({
-  position,
-  name,
-  description,
-  imageUrl,
-}: Banheiro) {
+export function MarkerLocal({ position, type, description, imageUrl }: Local) {
   const [modalOpen, setModalOpen] = useState(false)
 
   return (
     <Marker
       position={position}
-      icon={iconeBanheiro}
+      icon={icones[type]}
       eventHandlers={{ click: () => setModalOpen(true) }}
     >
       <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-        <h1>{name}</h1>
         <p>{description}</p>
         {imageUrl.map((url, index) => (
           <img

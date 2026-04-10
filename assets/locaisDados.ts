@@ -1,72 +1,72 @@
-export type Banheiro = {
-  id?: number
-  name: string
+export type Local = {
+  id?: string
+  type: string
   description: string
   imageUrl: string[]
   position: [number, number]
 }
 
-export const banheiros: Banheiro[] = [
+export const locais: Local[] = [
   {
-    id: 1,
-    name: 'bloco-1',
-    description: 'banheiro do corredor do ensino',
+    id: 'bloco1_banheiro',
+    type: 'banheiro',
+    description: 'Banheiro do corredor do ensino',
     imageUrl: ['imagens/Bloco1_Banheiro_Esquerda.jpg'],
     position: [-30.14144921356257, -51.130797828931925],
   },
   {
-    id: 2,
-    name: 'bloco-2',
+    id: 'bloco2_banheiro',
+    type: 'banheiro',
     description: 'agenero',
     imageUrl: ['imagens/Bloco2_Banheiro.jpg'],
     position: [-30.141434136530837, -51.130365993267205],
   },
   {
-    id: 3,
-    name: 'bloco-1',
+    id: 'biblioteca_banheiro',
+    type: 'banheiro',
     description: 'perto da biblioteca',
     imageUrl: ['imagens/Bloco1_Banheiro.jpg'],
     position: [-30.141707842286756, -51.13044511843559],
   },
   {
-    id: 4,
-    name: 'bloco-2',
+    id: 'bloco2_banheiro2',
+    type: 'banheiro',
     description: 'masculino',
     imageUrl: [],
     position: [-30.141685806681963, -51.130140687703005],
   },
   {
-    id: 5,
-    name: 'bloco-2',
+    id: 'bloco2_banheiro3',
+    type: 'banheiro',
     description: 'feminino',
     imageUrl: [],
     position: [-30.141550113638743, -51.1300333993391],
   },
   {
-    id: 6,
-    name: 'bloco-3',
-    description: '',
+    id: 'bloco3_banheiro',
+    type: 'banheiro',
+    description: 'Banheiro do bloco 3',
     imageUrl: ['imagens/Bloco3_Banheiro.jpg'],
     position: [-30.14126828902699, -51.13023322391849],
   },
   {
-    id: 7,
-    name: 'bloco-4',
-    description: '',
+    id: 'bloco4_banheiro',
+    type: 'banheiro',
+    description: 'Banheiro do bloco 4',
     imageUrl: ['imagens/Bloco4_Banheiro.jpg', 'imagens/Bloco4_Banheiro(1).jpg'],
     position: [-30.141074606620165, -51.13007765580158],
   },
   {
-    id: 8,
-    name: 'bloco-5',
-    description: '',
+    id:  'bloco5_banheiro',
+    type: 'banheiro',
+    description: 'Banheiro do bloco 5',
     imageUrl: ['imagens/Bloco5_Banheiro.jpg', 'imagens/Bloco5_Banheiro(1).jpg'],
     position: [-30.140860047829424, -51.12990733552388],
   },
   {
-    id: 9,
-    name: 'bloco-6',
-    description: '',
+    id: 'agricologia_banheiro',
+    type: 'banheiro',
+    description: 'Banheiro da agricologia',
     imageUrl: [
       'imagens/Agricologia_Banheiro.jpg',
       'imagens/Agricologia_Banheiro(1).jpg',
