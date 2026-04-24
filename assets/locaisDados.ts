@@ -75,4 +75,46 @@ export const locais: Local[] = [
     ],
     position: [-30.140621516266794, -51.1307370362456],
   },
+  {
+    id: 'bloco1_biblioteca',
+    type: 'biblioteca',
+    description: "Biblioteca",
+    imageUrl: [],
+    position: [-30.141820164020242, -51.13031450449085]
+  },
+  {
+    id: 'pertoDoLago',
+    type: 'referencia',
+    description: "aquele local perto do lago com as plantações",
+    imageUrl: [],
+    position: [-30.140973530309022, -51.1319426053998]
+  },
+  {
+    id: 'Ginasio',
+    type: 'ginasio',
+    description: "é o ginásio",
+    imageUrl: [],
+    position: [-30.14089568180945, -51.13167979056607]
+  },
+  {
+    id: 'QuadraVolei',
+    type: 'ginasio',
+    description: "Quadra de volei de areia",
+    imageUrl: [],
+    position: [-30.140857512405805, -51.13082029839561]
+  },
+  {
+    id: 'Estufa',
+    type: 'flor',
+    description: "é a estufa",
+    imageUrl: [],
+    position: [-30.140497443543325, -51.13068044958903]
+  },
+  {
+    id: 'bioConstrução',
+    type: 'referencia',
+    description: "é aquele telhadinho na frente da churrasqueira",
+    imageUrl: [],
+    position: [-30.140561026260926, -51.13084901269282]
+  }
 ]

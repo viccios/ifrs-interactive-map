@@ -18,7 +18,7 @@ function App() {
       </header>
       <MapContainer
         center={[-30.1408963, -51.1326784]}
-        zoom={17}
+        zoom={18}
         style={{ width: '100%', height: '90vh' }}
       >
         <TileLayer

@@ -1,15 +1,39 @@
 import * as L from 'leaflet'
 import { useState } from 'react'
 import { Marker } from 'react-leaflet'
-import banheiroPng from './banheiro.png'
+import banheiroSVG from './banheiro.svg'
+import referenciaSVG from './referencia.svg'
+import esportesSVG from './esportes.svg'
+import bibliotecaSVG from './biblioteca.svg'
+import florSVG from './flor.svg'
 import { Modal } from './Model'
 import type { Local } from '../../assets/locaisDados'
 
 const icones:Record<string,L.Icon> = {
   banheiro: L.icon({
-    iconUrl: banheiroPng,
+    iconUrl: banheiroSVG,
     iconSize: [25, 25],
   }),
+  referencia: L.icon({
+    iconUrl: referenciaSVG,
+    iconSize: [25,25]
+  }),
+  biblioteca: L.icon({
+    iconUrl: bibliotecaSVG,
+    iconSize: [25,25]
+  }),
+  ginasio: L.icon({
+    iconUrl: esportesSVG,
+    iconSize: [25,25]
+  }),
+  quadraVolei: L.icon({
+    iconUrl: esportesSVG,
+    iconSize: [25,25]
+  }),
+  flor: L.icon({
+    iconUrl: florSVG,
+    iconSize: [25,25]
+  })
 }
 
 export function MarkerLocal({ position, type, description, imageUrl }: Local) {
