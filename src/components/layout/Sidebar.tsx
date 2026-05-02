@@ -6,7 +6,7 @@ export function Sidebar() {
 	return (
 		<aside className="bg-gray-900 flex flex-col h-full">
 			<Header />
-			<div className="p-6 flex flex-col gap-8 flex-1 overflow-y-auto">
+			<div className="p-6 flex flex-col gap-5 flex-1 overflow-y-auto">
 				<SearchBar />
 				<CategoryFilters />
 			</div>

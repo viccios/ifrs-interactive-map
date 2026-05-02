@@ -14,7 +14,7 @@ export function Header() {
 					/>
 				</div>
 				<h1 className="text-emerald-500 text-xl font-bold tracking-tight">
-					Mapa IFRS
+					IFRS Campus Restinga
 				</h1>
 			</div>
 			<button
