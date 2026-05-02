@@ -1,4 +1,29 @@
-* {
-  margin: 0;
-  padding: 0;
+@import "tailwindcss";
+
+.leaflet-container .leaflet-control-zoom.leaflet-bar {
+	border: none;
+	box-shadow:
+		0 4px 6px -1px rgb(0 0 0 / 0.3),
+		0 2px 4px -2px rgb(0 0 0 / 0.3);
+	border-radius: 0.75rem;
+	overflow: hidden;
+}
+
+.leaflet-container .leaflet-control-zoom.leaflet-bar a {
+	background-color: #1f2937;
+	color: #f9fafb;
+	border-bottom: 1px solid #374151;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	transition: all 0.2s;
+}
+
+.leaflet-container .leaflet-control-zoom.leaflet-bar a:hover {
+	background-color: #059669;
+	color: #ffffff;
+}
+
+.leaflet-container .leaflet-control-zoom.leaflet-bar a:last-child {
+	border-bottom: none;
 }
